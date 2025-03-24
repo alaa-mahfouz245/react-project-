@@ -1,0 +1,72 @@
+.courses-container {
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-course {
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.course-card {
+  max-width: calc(30% - 10px);
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .course-card {
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+/* عند تصغير الشاشة إلى 768px، يتم عرض كورسين فقط */
+@media (max-width: 768px) {
+  .course-card {
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* عند تصغير الشاشة أكثر، يتم عرض كورس واحد فقط */
+@media (max-width: 480px) {
+  .course-card {
+    max-width: 100%;
+  }
+}
+
+.course-image {
+  width: 100%;
+  border-radius: 5px;
+  height: 150px;
+}
+
+.course-actions {
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
