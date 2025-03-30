@@ -1,7 +1,14 @@
 import React from "react";
 import "./StudentsForm.css";
+import { useNavigate ,Outlet  } from "react-router-dom";
+import StudentTable from "./Students";
 
 const StudentsForm = () => {
+  const navigate =useNavigate()
+  const handleNavigateStudentList = (e)=> {
+    e.preventDefault();
+    navigate("StudentTable")
+  }
   return (
     <div className="form-container">
       <h2 className="form-title">Add Student</h2>
@@ -42,10 +49,11 @@ const StudentsForm = () => {
           <option>Group B</option>
           <option>Group C</option>
         </select>
-        <button type="submit" className="submit-btn">
+        <button onClick={handleNavigateStudentList} type="submit" className="submit-btn">
           Add
         </button>
       </form>
+      <Outlet/>
     </div>
   );
 };

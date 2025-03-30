@@ -7,7 +7,9 @@ import Courses from "./components/Courses";
 import Roles from "./components/Roles";
 import StudentsForm from "./components/StudentsForm";
 import CoursesDetails from "./components/CoursesDetails";
+import Academic from "./components/Academic"
 import "./App.css";
+import StudentTable from "./components/Students";
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -25,10 +27,12 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Navigate to="/dashboard" />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/students" element={<StudentsForm />} />
+            <Route path="/students" element={<StudentsForm/>} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/roles" element={<Roles />} />
             <Route path="/corsesdetails" element={<CoursesDetails />} />
+            <Route path="/students/StudentTable" element={<StudentTable/>}/>
+            <Route path="academic" element={<Academic/>}/>
           </Routes>
         </div>
       </div>

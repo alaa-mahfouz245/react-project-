@@ -1,0 +1,84 @@
+.admins-container {
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .buttons {
+    margin-bottom: 15px;
+    display: flex;
+  }
+  
+  button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .add-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .export-btn, .import-btn {
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    justify-content: center
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .admins-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .admins-table th, .admins-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .admins-table th {
+    background-color: #212529;
+    color: white;
+  }
+  
+  .status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .active {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .edit-icon, .delete-icon {
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  .edit-icon {
+    color: #007bff;
+  }
+  
+  .delete-icon {
+    color: #dc3545;
+  }
+  

@@ -51,7 +51,7 @@ const Sidebar = ({ isOpen }) => {
             <span>Roles</span>
         </li>
           </Link>
-          <Link to="/roles">
+          <Link to="/academic">
         <li>
             <FaUsers />
             <span>Group</span>
